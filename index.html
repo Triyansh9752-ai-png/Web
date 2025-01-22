@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Triyansh Patel | Profile</title>
   <style>
+    /* Base Styles */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: #f4f4f4;
       background: linear-gradient(135deg, #1e1e2e, #0a0a0f);
+      scroll-behavior: smooth; /* Smooth scrolling */
     }
     .container {
       max-width: 800px;
@@ -18,20 +20,26 @@
       background: #121212;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
     }
     h1, h2 {
       color: #00d4ff;
       text-align: center;
+      animation: slideDown 1s ease-out; /* Heading slide-in animation */
     }
     p {
       line-height: 1.6;
+      animation: fadeIn 2s ease-in-out; /* Paragraph fade-in */
     }
     a {
       color: #ff7b00;
       text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease; /* Link hover effect */
     }
     a:hover {
       text-decoration: underline;
+      color: #ff4500;
+      transform: scale(1.05); /* Scale up on hover */
     }
     .info, .contact {
       margin-top: 20px;
@@ -42,6 +50,46 @@
     }
     .highlight {
       color: #00ffab;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Back-to-Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00d4ff;
+      color: #121212;
+      padding: 10px 15px;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 20px;
+    }
+    .back-to-top:hover {
+      background-color: #00ffab;
+      transform: scale(1.1);
     }
   </style>
 </head>
@@ -69,5 +117,15 @@
       <p>Email: <a href="mailto:kp7846581@gmail.com">kp7846581@gmail.com</a></p>
     </div>
   </div>
+
+  <!-- Back-to-Top Button -->
+  <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Smooth scroll back-to-top function
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
