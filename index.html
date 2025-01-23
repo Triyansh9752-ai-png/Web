@@ -1,131 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Triyansh Patel | Profile</title>
-  <style>
-    /* Base Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #f4f4f4;
-      background: linear-gradient(135deg, #1e1e2e, #0a0a0f);
-      scroll-behavior: smooth; /* Smooth scrolling */
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background: #121212;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
-    }
-    h1, h2 {
-      color: #00d4ff;
-      text-align: center;
-      animation: slideDown 1s ease-out; /* Heading slide-in animation */
-    }
-    p {
-      line-height: 1.6;
-      animation: fadeIn 2s ease-in-out; /* Paragraph fade-in */
-    }
-    a {
-      color: #ff7b00;
-      text-decoration: none;
-      transition: color 0.3s ease, transform 0.3s ease; /* Link hover effect */
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #ff4500;
-      transform: scale(1.05); /* Scale up on hover */
-    }
-    .info, .contact {
-      margin-top: 20px;
-    }
-    .contact a {
-      display: block;
-      margin: 5px 0;
-    }
-    .highlight {
-      color: #00ffab;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    @keyframes slideDown {
-      from {
-        transform: translateY(-20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    /* Back-to-Top Button */
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00d4ff;
-      color: #121212;
-      padding: 10px 15px;
-      border-radius: 50%;
-      border: none;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      font-size: 20px;
-    }
-    .back-to-top:hover {
-      background-color: #00ffab;
-      transform: scale(1.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sun Mughan Swamy - Web Profiler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for Icons -->
 </head>
+
 <body>
-  <div class="container">
-    <h1>Triyansh Patel</h1>
-    <h2><span class="highlight">Backend Developer</span></h2>
-    <div class="info">
-      <p>Age: <strong>18 years old</strong></p>
-      <p>Nationality: <strong>Indian</strong></p>
-      <p>"Just pushing my limits to learn more and more."</p>
-      <p>
-        I am a <strong>Python Backend Developer</strong>, specializing in <strong>Telegram bot development</strong>. 
-        I also have expertise in tunneling VPNs and working with different bug hosts, including 
-        CloudFront, Microsoft, Cloudflare, Bunny, Fastly, and Nginx.  
-      </p>
-      <p>I own a famous Telegram channel called <strong>Gujarat Tiger Squad</strong>, boasting over <strong>12,000 members</strong>.  
-        I have been a part of the free internet community for a long time, though I am relatively new to coding.
-      </p>
-    </div>
-    <div class="contact">
-      <h2>Contact Me</h2>
-      <p><a href="https://www.instagram.com/sarcastic_boyyy143?igsh=MWtwYndoZ252Z3VzMA==" target="_blank">Instagram: @sarcastic_boyyy143</a></p>
-      <p><a href="https://t.me/Triyansh_001" target="_blank">Telegram: @Triyansh_001</a></p>
-      <p>Email: <a href="mailto:kp7846581@gmail.com">kp7846581@gmail.com</a></p>
-    </div>
-  </div>
 
-  <!-- Back-to-Top Button -->
-  <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <img src="profile-pic.jpg" alt="Profile Picture" id="profile-pic">
+            <div class="header-content">
+                <h1>Sun Mughan Swamy</h1>
+                <p>Experienced I.T Professional | 10 Years of Expertise in the Industry</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/sunmughan" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sunmughan" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="mailto:sunmughan@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <script>
-    // Smooth scroll back-to-top function
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Sun Mughan Swamy, an experienced I.T Professional with over 10 years of expertise in the industry. I have successfully co-founded and led various businesses, offering innovative technological solutions to clients worldwide. My focus lies in driving growth through ecommerce optimization and digital strategies. Passionate about solving complex problems, I lead businesses towards sustainable success.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul class="experience-list">
+                <li>
+                    <h3>Co-Founder - Rudraksh Consultancy</h3>
+                    <p>2024 - Present | Rajkot, Gujarat, India</p>
+                    <p>Empowering businesses worldwide, I lead Rudraksh Consultancy's strategic direction and technological innovation, delivering bespoke solutions driving growth in ecommerce.</p>
+                </li>
+                <li>
+                    <h3>Co-Founder - TaxDraw</h3>
+                    <p>2022 - Present | Jodhpur, Rajasthan, India</p>
+                    <p>Led the technological revolution at TaxDraw, architecting innovative systems for seamless access to legal expertise, and enhancing client experiences.</p>
+                </li>
+                <li>
+                    <h3>Freelance Software Engineer - Fiverr</h3>
+                    <p>2020 - Present | Remote</p>
+                    <p>Worked on delivering custom software, web, and mobile applications for clients globally, with a focus on business transformation and efficient software solutions.</p>
+                </li>
+                <li>
+                    <h3>Head of Information Technology - YouPlay Group</h3>
+                    <p>2020 - 2022 | Portugal (Remote)</p>
+                    <p>Managed the IT needs of YouPlay Group, driving technological innovations and overseeing the development of key systems.</p>
+                </li>
+                <li>
+                    <h3>Business Owner - SnackMeal</h3>
+                    <p>2021 - 2021 | Indore, Madhya Pradesh, India</p>
+                    <p>Launched a home food delivery startup, focusing on delivering tasty and hygienic meals to customers.</p>
+                </li>
+                <!-- Add more experiences here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><a href="https://play.google.com/store/apps/details?id=com.wpay_B2B" target="_blank">WPAY B2B App</a></li>
+                <li><a href="https://hrgdestiny.com/" target="_blank">HRG Destiny</a></li>
+                <li><a href="https://www.taxdraw.com/" target="_blank">TaxDraw</a></li>
+                <li><a href="https://www.qwiklist.in/" target="_blank">QwikList</a></li>
+                <li><a href="https://svgcindore.com/" target="_blank">SVG CIndore</a></li>
+                <!-- Add more projects here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node"></i> Node.js</li>
+                <li><i class="fab fa-android"></i> Android Development</li>
+                <li><i class="fas fa-database"></i> MySQL / MongoDB</li>
+                <li><i class="fas fa-laptop-code"></i> PHP & Laravel</li>
+                <li><i class="fas fa-cogs"></i> REST API Development</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p>Pt. Ravishankar Shukla University, Raipur | 2018 - 2021</p>
+                    <p>Pursuing post-graduation in Computer Science.</p>
+                </li>
+                <li>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>Sai College Bhilai | 2015 - 2018</p>
+                    <p>Grade: 78%</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <p>© 2025 Sun Mughan Swamy. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
-</html>
+
+                  </html>
