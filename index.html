@@ -1,134 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sun Mughan Swamy - Web Profiler</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for Icons -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triyansh | Digital Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .hover-glow:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
 </head>
+<body class="bg-gray-950 text-white">  <!-- Navbar -->  <nav class="flex items-center justify-between px-6 py-4 bg-gray-900 shadow-md">
+    <h1 class="text-xl font-semibold tracking-wide">Triyansh</h1>
+    <ul class="flex gap-6 text-sm">
+      <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+      <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+      <li><a href="#travel" class="hover:text-indigo-400">Travel</a></li>
+      <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+    </ul>
+  </nav>  <!-- Hero Section -->  <section class="flex flex-col items-center justify-center h-screen text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+      Hey, I'm <span class="text-indigo-400">Triyansh</span>
+    </h2>
+    <p class="mt-4 text-lg max-w-xl">
+      Tech enthusiast, VPN wizard, and road explorer. I build secure systems, ride fast, and dream of seeing the whole world.
+    </p>
+    <a href="#about" class="mt-6 inline-block bg-indigo-600 hover:bg-indigo-700 transition px-6 py-2 rounded-xl text-white">
+      Learn More
+    </a>
+  </section>  <!-- About Section -->  <section id="about" class="px-6 py-12 bg-gray-900 glass rounded-xl mx-4" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <div class="max-w-3xl space-y-4">
+      <p>I'm Triyansh, an 18-year-old digital explorer from India who thrives on adventure and innovation. Whether it's setting up VPNs, routing traffic, or diving into CDN optimization — I love solving problems and pushing tech to its limits.</p>
+      <p>I’m also a bike lover, car enthusiast, and a guy who wants to see the whole world one road at a time. From mountain trails to server logs, every path is part of my journey.</p>
+      <p>I completed my schooling at Maharishi Vidya Mandir, where my love for tech began.</p>
+      <p><strong>Fun Fact:</strong> “Life's a journey—whether it's trekking through mountains or exploring the depths of the internet.”</p>
+      <p><strong>Thought:</strong> 📜🕉️ "Walking the path of Dharma, guided by Krishna's flute."</p>
+    </div>
+  </section>  <!-- Projects Section -->  <section id="projects" class="px-6 py-12 bg-gray-950 text-white" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-8 text-center">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6"><div class="bg-gray-900 p-6 rounded-2xl shadow-md hover-glow glass">
+    <h4 class="text-xl font-semibold mb-2">Custom VPN Tunnel</h4>
+    <p class="text-sm text-gray-300 mb-4">Built a secure VPN system using VPS, Nginx, and Cloudflare to mask IPs and ensure anonymity.</p>
+    <a href="#" class="text-indigo-400 hover:underline">View More</a>
+  </div>
 
-<body>
+  <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover-glow glass">
+    <h4 class="text-xl font-semibold mb-2">CDN Optimization</h4>
+    <p class="text-sm text-gray-300 mb-4">Improved speed and security using Apache, BunnyCDN, and AWS CloudFront on client sites.</p>
+    <a href="#" class="text-indigo-400 hover:underline">View More</a>
+  </div>
 
-    <!-- Header Section -->
-    <header id="header">
-        <div class="container">
-            <img src="profile-pic.jpg" alt="Profile Picture" id="profile-pic">
-            <div class="header-content">
-                <h1>Sun Mughan Swamy</h1>
-                <p>Experienced I.T Professional | 10 Years of Expertise in the Industry</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/sunmughan" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sunmughan" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="mailto:sunmughan@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
+  <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover-glow glass">
+    <h4 class="text-xl font-semibold mb-2">Auto Proxy Rotator</h4>
+    <p class="text-sm text-gray-300 mb-4">Coded a dynamic IP rotation tool for secure scraping with rotating VPS nodes.</p>
+    <a href="#" class="text-indigo-400 hover:underline">View More</a>
+  </div>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Sun Mughan Swamy, an experienced I.T Professional with over 10 years of expertise in the industry. I have successfully co-founded and led various businesses, offering innovative technological solutions to clients worldwide. My focus lies in driving growth through ecommerce optimization and digital strategies. Passionate about solving complex problems, I lead businesses towards sustainable success.</p>
-        </div>
-    </section>
+</div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <ul class="experience-list">
-                <li>
-                    <h3>Co-Founder - Rudraksh Consultancy</h3>
-                    <p>2024 - Present | Rajkot, Gujarat, India</p>
-                    <p>Empowering businesses worldwide, I lead Rudraksh Consultancy's strategic direction and technological innovation, delivering bespoke solutions driving growth in ecommerce.</p>
-                </li>
-                <li>
-                    <h3>Co-Founder - TaxDraw</h3>
-                    <p>2022 - Present | Jodhpur, Rajasthan, India</p>
-                    <p>Led the technological revolution at TaxDraw, architecting innovative systems for seamless access to legal expertise, and enhancing client experiences.</p>
-                </li>
-                <li>
-                    <h3>Freelance Software Engineer - Fiverr</h3>
-                    <p>2020 - Present | Remote</p>
-                    <p>Worked on delivering custom software, web, and mobile applications for clients globally, with a focus on business transformation and efficient software solutions.</p>
-                </li>
-                <li>
-                    <h3>Head of Information Technology - YouPlay Group</h3>
-                    <p>2020 - 2022 | Portugal (Remote)</p>
-                    <p>Managed the IT needs of YouPlay Group, driving technological innovations and overseeing the development of key systems.</p>
-                </li>
-                <li>
-                    <h3>Business Owner - SnackMeal</h3>
-                    <p>2021 - 2021 | Indore, Madhya Pradesh, India</p>
-                    <p>Launched a home food delivery startup, focusing on delivering tasty and hygienic meals to customers.</p>
-                </li>
-                <!-- Add more experiences here -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul class="projects-list">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wpay_B2B" target="_blank">WPAY B2B App</a></li>
-                <li><a href="https://hrgdestiny.com/" target="_blank">HRG Destiny</a></li>
-                <li><a href="https://www.taxdraw.com/" target="_blank">TaxDraw</a></li>
-                <li><a href="https://www.qwiklist.in/" target="_blank">QwikList</a></li>
-                <li><a href="https://svgcindore.com/" target="_blank">SVG CIndore</a></li>
-                <!-- Add more projects here -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fab fa-js-square"></i> JavaScript</li>
-                <li><i class="fab fa-react"></i> React</li>
-                <li><i class="fab fa-node"></i> Node.js</li>
-                <li><i class="fab fa-android"></i> Android Development</li>
-                <li><i class="fas fa-database"></i> MySQL / MongoDB</li>
-                <li><i class="fas fa-laptop-code"></i> PHP & Laravel</li>
-                <li><i class="fas fa-cogs"></i> REST API Development</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul class="education-list">
-                <li>
-                    <h3>Master of Computer Applications (MCA)</h3>
-                    <p>Pt. Ravishankar Shukla University, Raipur | 2018 - 2021</p>
-                    <p>Pursuing post-graduation in Computer Science.</p>
-                </li>
-                <li>
-                    <h3>Bachelor of Computer Applications (BCA)</h3>
-                    <p>Sai College Bhilai | 2015 - 2018</p>
-                    <p>Grade: 78%</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer id="footer">
-        <div class="container">
-            <p>© 2025 Sun Mughan Swamy. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-
-                  </html>
+  </section>  <!-- Travel Section -->  <section id="travel" class="px-6 py-12 bg-gray-900 text-white" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-8 text-center">Places I Dream of Exploring</h3>
+    <p class="text-center mb-6 text-gray-400">From the Himalayas to Tokyo, from Santorini to Silicon Valley — the world is waiting.</p>
+    <div class="flex flex-wrap justify-center gap-4 text-sm">
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">Leh-Ladakh</span>
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">Japan</span>
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">Switzerland</span>
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">Dubai</span>
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">Norway</span>
+      <span class="px-4 py-2 bg-indigo-800 rounded-full">New York</span>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact" class="px-6 py-12" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+    <p class="mb-4">Got a project, idea, or just want to chat? Reach out!</p>
+    <a href="mailto:your@email.com" class="text-indigo-400 hover:underline">your@email.com</a>
+  </section>  <!-- Footer -->  <footer class="text-center py-6 text-sm text-gray-400 bg-gray-900">
+    © 2025 Triyansh. Built with heart and Tailwind.
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init();
+  </script></body>
+</html>
